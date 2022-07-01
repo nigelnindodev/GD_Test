@@ -24,6 +24,9 @@ To run the project, just have node and npm installed. Install dependencies with 
 Haven't used SQLite in a while, but found [this tool](https://sqlitebrowser.org/dl/) to help browse through the created db. Might be a better tool out there, but due to time constraints cannot check.
 Found out it's very important to close the DB connection via the tool when running the application code. 
 
+I have seeded the database (data.db) with some test data but created an endpoint to make it easier to if you want to create more titles `curl -X POST http://localhost:3000/title -H 'Content-Type: application/json' -d '{"title":"Title 1"}'`. You can even delete `data.db` file and start seeding with new data.
+
+
 ### Improvements
 - Add a proper logger instead of console.log to STDOUT
 - USe a proper DB rather than SQLite. Maybe a managed DB hosted by a cloud provider
