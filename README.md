@@ -39,6 +39,7 @@ Found out it's very important to close the DB connection via the tool when runni
 - If time allowed, would have refactored some functions like `getAllReservations` to the models folder to maintain a cleaner services implementation
 - Wasted some time setting up the DB, since I set up not with my [usual scaffold](https://github.com/javieraviles/node-typescript-koa-rest). Wanted the take home test to be a bare bones as possible.
 - With more time, would have created foreign key relationships for the two tables to find reservations based on id in a more efficient manner. Currently, first selecting id if available then checking from reservations if exists.
+- Wanted to have mutiple branches into merge conflict hell that couldn't resolve in the last hour: This [StackOverflow Post](https://stackoverflow.com/a/17903155) was able to help me consolidate all the work
 
 ### Assumptions
 - We can have multiple titles, and the same email can reserve the same title multiple times as long as there is availability
