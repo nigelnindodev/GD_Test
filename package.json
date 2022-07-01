@@ -1,0 +1,33 @@
+{
+  "name": "GD",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build-server": "tslint -p . && tsc --skipLibCheck",
+    "watch-server": "cross-env NODE_ENV=development nodemon --watch 'src/**/*' -e ts --exec 'ts-node' src/server/server.ts",
+    "start": "node dist/server/server.js",
+    "start-server": "npm run build-server && npm run start"
+  },
+  "dependencies": {
+    "email-validator": "2.0.4",
+    "flatted": "3.2.6",
+    "joi": "17.6.0",
+    "knex": "2.1.0",
+    "koa": "2.5.1",
+    "koa-bodyparser": "4.2.0",
+    "koa-json-log": "2.0.2",
+    "koa-router": "7.4.0",
+    "sqlite3": "5.0.8"
+  },
+  "devDependencies": {
+    "@types/koa": "2.0.45",
+    "@types/koa-bodyparser": "4.2.0",
+    "@types/koa-router": "7.0.28",
+    "@types/node": "8.10.10",
+    "cross-env": "5.1.4",
+    "nodemon": "1.17.3",
+    "ts-node": "6.0.1",
+    "tslint": "5.9.1",
+    "typescript": "4.6.3"
+  }
+}

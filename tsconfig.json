@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es2017",
+        "strict": false,
+        "rootDir": "./src",
+        "outDir": "./dist",
+        "experimentalDecorators": true,
+        "strictPropertyInitialization": false,
+        "skipLibCheck": true
+    }
+}
