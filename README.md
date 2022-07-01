@@ -18,7 +18,7 @@ In order to maintain thin controllers, we'll define business logic in services
 ### Running the project
 
 Was a bit conflicted on how to set this up easily. Especially where to host the database. Wanted to not use docker due to ephemeral storage. So decided to use SQLite.
-To run the project, just have node and npm installed. Install dependencies with `npm install` Then run with `npm run build-run`
+To run the project, just have node and npm installed. Install dependencies with `npm install` Then run with `npm run start-server`
 
 ### SQLite browser
 Haven't used SQLite in a while, but found [this tool](https://sqlitebrowser.org/dl/) to help browse through the created db. Might be a better tool out there, but due to time constraints cannot check.
