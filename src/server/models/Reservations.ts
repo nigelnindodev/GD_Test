@@ -27,9 +27,13 @@ export async function deleteReservation(id: number) {
 }
 
 export async function getReservationByTitleId(titleId: number) {
-    const result = await knexInstance(TABLE_NAMES).select().where({
+    const result = await knexInstance(TABLE_NAMES.RESERVATIONS).select().where({
         titleId: titleId
     }).first();
     console.log(result);
     return result;
+}
+
+export async function getAllReservationsFromDb() {
+    return knexInstance(TABLE_NAMES.RESERVATIONS).select();
 }

@@ -1,6 +1,12 @@
 import {knexInstance, TABLE_NAMES} from "../db_instance";
 
-import {createReservation, deleteReservation, getReservationByTitleId, Reservations} from "../models/Reservations";
+import {
+    createReservation,
+    deleteReservation,
+    getAllReservationsFromDb,
+    getReservationByTitleId,
+    Reservations
+} from "../models/Reservations";
 import {isEmailvalid} from "../utils/general_utils_service";
 import {ApiError} from "../utils/ApiError";
 import { findTitle, findTitleById, updateTitle } from "../models/Titles";
@@ -12,7 +18,8 @@ const Joi = require("joi");
 
 export async function getAllReservations(): Promise<ApiResponse> {
     console.log("GET all reservations request");
-    return new ApiResponse(200, knexInstance<Reservations>(TABLE_NAMES.RESERVATIONS));
+    //return new ApiResponse(200, knexInstance<Reservations>(TABLE_NAMES.RESERVATIONS));
+    return new ApiResponse(200, await getAllReservationsFromDb());
 }
 
 export async function getReservation(id: number): Promise<ApiResponse> {
