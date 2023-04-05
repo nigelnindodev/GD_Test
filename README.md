@@ -1,3 +1,5 @@
+##### 3 hour constraint to finsh this project
+
 - Struggled a bit to set up the project, had run into this weired bug where the scaffold I used generated a wrong TypeScript version. Found and a solution [here](https://github.com/DefinitelyTyped/DefinitelyTyped/issues/53397)
 
 https://stackoverflow.com/questions/49251749/tslint-not-excluding-node-modules-in-angular-project also had some nice insights that shoud have worked but was pointing towards the wrong thing. I'll update this stack overflow post as well.
