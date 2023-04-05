@@ -1,4 +1,4 @@
-##### 3 hour constraint to finsh this project, elft comment on README.md while working through it
+##### 3 hour constraint to finsh this project, left comments on README.md while working through it
 
 - Struggled a bit to set up the project, had run into this weired bug where the scaffold I used generated a wrong TypeScript version. Found and a solution [here](https://github.com/DefinitelyTyped/DefinitelyTyped/issues/53397)
 
